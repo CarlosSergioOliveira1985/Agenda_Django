@@ -19,7 +19,9 @@
                 {% for Contact in contacts  %}
                     <tr class="table-row">
                         <td class="table-cel">
-                            <a class="table-link" href="#">
+                            <a 
+                            class="table-link" 
+                            href="{% url "contact:contact" contact.id %}">
                                 {{Contact.id}}
                             </a>
                         </td>
@@ -32,7 +34,6 @@
                             <a class="table-link" href="#">
                                 {{Contact.last_name}}
                             </a>
-
                         </td>
                         <td class="table-cel">
                             <a class="table-link" href="#">
